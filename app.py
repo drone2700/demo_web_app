@@ -3,6 +3,7 @@ from flask import render_template
 
 app = Flask(__name__) # 1. Create the app
 
+
 @app.route("/")      # 2. Map a URL
 def home():        #  to a function
   return "Hello, Buyers Edge!"
@@ -25,7 +26,7 @@ def menu():
 
 
 from flask import Flask, jsonify, request, abort
-app = Flask(__name__)
+
 
 products = [
   {"id": 1, "name": "Rice", "price": 4.5},
